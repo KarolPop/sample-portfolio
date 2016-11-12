@@ -1,0 +1,9 @@
+$(document).foundation()
+$('#myForm')
+  .on('invalid', function () {
+    var invalid_fields = $(this).find('[data-invalid]');
+    console.log(invalid_fields);
+  })
+  .on('valid', function () {
+    console.log('valid!');
+  });   
